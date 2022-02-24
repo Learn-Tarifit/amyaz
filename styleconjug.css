@@ -1,0 +1,26 @@
+.header{text-align: center;}
+.row{text-align: center;}
+
+
+.card{
+   margin-top: 10px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: 10;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+   width: 80%;
+   max-width: 600px;
+   display: flex;
+}
+
+
+.card-header{
+   margin-top: 10px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: 10;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+   width: 80%;
+   max-width: 600px;
+   display: flex;
+}

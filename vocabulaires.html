@@ -1,0 +1,962 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <title>Amyaz</title>
+  <link rel="stylesheet" href="new_style.css">
+</head>
+  
+<body>
+  <section class="page">
+    <!-- Barre de navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="yay2.jpg" width="40" height="30" class="d-inline-block align-top" alt="">
+            AMYAZ
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Verbes</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="vocabulaires.html">Vocabulaires<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="conjugaison.html">Conjugaison</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <li class="form-inline my-2 my-lg-0">
+            <a href="#" class="btn btn-dark mr-1">Darija</a>
+            <a href="#" class="btn btn-dark mr-1">Néerlandais</a>
+        </li>
+        </div>
+      </nav>
+    
+         <!-- Header -->
+		
+			<header>
+				<div>
+					<img src="introvoc.jpg" class="img-fluid" alt="Responsive image">
+					</div>
+				<div class="container mt-3">
+				  <p class="text-center font-weight-bold"></p>
+					<p></p>  
+					<input class="form-control" id="myInput" onkeyup='tableSearch()' type="text" placeholder="Tape ici le mot recherché">
+					<br>
+					<table class="table table-bordered">
+					  <thead>
+						<tr>
+							<th>Français</th>
+							<th colspan="2">Tamaziɣt s latin</th>
+						  </tr>
+						  <tr>
+							<th>singulier</th>
+							<th>asuf</th>
+							<th>amagut</th>
+						  </tr>
+						</thead>
+							<tbody id="myTable">
+								<tr>
+									<td>fond, profondeur</td>
+									<td>alliɣ</td>
+									<td>alliɣen</td>
+								</tr>
+								<tr>
+									<td>centre</td>
+									<td>ammas</td>
+									<td>ammasen</td>
+								</tr>
+								<tr>
+									<td>président</td>
+									<td>arrayes</td>
+									<td>arruyas</td>
+								</tr>
+								<tr>
+									<td>lune</td>
+									<td>ayur</td>
+									<td>ayuren</td>
+								</tr>
+								<tr>
+									<td>mois</td>
+									<td>ayur</td>
+									<td>ayuren</td>
+								</tr>
+								<tr>
+									<td>avocat (métier)</td>
+									<td>abuɣa</td>
+									<td>ibuɣawen</td>
+								</tr>
+								<tr>
+									<td>chemin, route</td>
+									<td>abrid</td>
+									<td>ibriden</td>
+								</tr>
+								<tr>
+									<td>peuple</td>
+									<td>agdud</td>
+									<td>igduden</td>
+								</tr>
+								<tr>
+									<td>sang</td>
+									<td>idammen</td>
+									<td>idammen</td>
+								</tr>
+								<tr>
+									<td>plaie</td>
+									<td>adday</td>
+									<td>iddyen</td>
+								</tr>
+								<tr>
+									<td>blessure</td>
+									<td>diddi</td>
+									<td>ididdyen</td>
+								</tr>
+								<tr>
+									<td>dernier (utilisé avec un nom de jour)</td>
+									<td>id</td>
+									<td>iden</td>
+								</tr>
+								<tr>
+									<td>montagne</td>
+									<td>adrar</td>
+									<td>idurar</td>
+								</tr>
+								<tr>
+									<td>nuit</td>
+									<td>iḍ</td>
+									<td>iḍan</td>
+								</tr>
+								<tr>
+									<td>pied</td>
+									<td>aḍaṛ</td>
+									<td>iḍaṛen</td>
+								</tr>
+								<tr>
+									<td>droite</td>
+									<td>afusi</td>
+									<td>ifusiyen</td>
+								</tr>
+								<tr>
+									<td>saleté</td>
+									<td>afraḍ</td>
+									<td>ifraḍen</td>
+								</tr>
+								<tr>
+									<td>chambre</td>
+									<td>axam</td>
+									<td>ixamen</td>
+								</tr>
+								<tr>
+									<td>os</td>
+									<td>ixss</td>
+									<td>ixsan</td>
+								</tr>
+								<tr>
+									<td>ancien</td>
+									<td>aqdim</td>
+									<td>iqdimen</td>
+								</tr>
+								<tr>
+									<td>ignorant</td>
+									<td>aqquban</td>
+									<td>iqqubanen</td>
+								</tr>
+								<tr>
+									<td>avare</td>
+									<td>aqemcac</td>
+									<td>iqemcacen</td>
+								</tr>
+								<tr>
+									<td>avare</td>
+									<td>aqẓẓaẓ</td>
+									<td>iqẓẓaẓen</td>
+								</tr>
+								<tr>
+									<td>ciel</td>
+									<td>ajenna</td>
+									<td>ijenwan</td>
+								</tr>
+								<tr>
+									<td>berger</td>
+									<td>alinti</td>
+									<td>ilintan</td>
+								</tr>
+								<tr>
+									<td>peau, cuir, parchemin</td>
+									<td>ilem</td>
+									<td>ilmawen</td>
+								</tr>
+								<tr>
+									<td>langue</td>
+									<td>iles</td>
+									<td>ilsawan</td>
+								</tr>
+								<tr>
+									<td>langue (idiom)</td>
+									<td>iles</td>
+									<td>ilsawan</td>
+								</tr>
+								<tr>
+									<td>voleur</td>
+									<td>amacar</td>
+									<td>imacaren</td>
+								</tr>
+								<tr>
+									<td>âme</td>
+									<td>iman</td>
+									<td>imanen</td>
+								</tr>
+								<tr>
+									<td>bureau</td>
+									<td>amaris</td>
+									<td>imarisen</td>
+								</tr>
+								<tr>
+									<td>limite</td>
+									<td>amari</td>
+									<td>imariyen</td>
+								</tr>
+								<tr>
+									<td>rebelle</td>
+									<td>amɣaɣaw</td>
+									<td>imɣaɣawen</td>
+								</tr>
+								<tr>
+									<td>conversation</td>
+									<td>amsawal</td>
+									<td>imsawalen</td>
+								</tr>
+								<tr>
+									<td>demandeur, mendiant</td>
+									<td>amattar</td>
+									<td>imattaren</td>
+								</tr>
+								<tr>
+									<td>coureur</td>
+									<td>amazzar</td>
+									<td>imazzaren</td>
+								</tr>
+								<tr>
+									<td>faiseur, auteur, créateur, inventeur</td>
+									<td>ameggay</td>
+									<td>imeggayen</td>
+								</tr>
+								<tr>
+									<td>marcheur</td>
+									<td>ameggur</td>
+									<td>imegguren</td>
+								</tr>
+								<tr>
+									<td>être vivant, créature</td>
+									<td>imilli</td>
+									<td>imillan</td>
+								</tr>
+								<tr>
+									<td>écrivain</td>
+									<td>amaru</td>
+									<td>imiran</td>
+								</tr>
+								<tr>
+									<td>intelligent</td>
+									<td>amiɣis</td>
+									<td>imiɣisen</td>
+								</tr>
+								<tr>
+									<td>inférieur</td>
+									<td>amadday</td>
+									<td>imaddayen</td>
+								</tr>
+								<tr>
+									<td>cavalier</td>
+									<td>amenay</td>
+									<td>imenayen</td>
+								</tr>
+								<tr>
+									<td>résistant</td>
+									<td>amnekkar</td>
+									<td>imnekkaren</td>
+								</tr>
+								<tr>
+									<td>précoce</td>
+									<td>amenzu</td>
+									<td>imenza</td>
+								</tr>
+								<tr>
+									<td>mignon, charmant</td>
+									<td>mudrus</td>
+									<td>imudrusen</td>
+								</tr>
+								<tr>
+									<td>Marocain</td>
+									<td>Amaɣrabi</td>
+									<td>Imeɣrabiyen</td>
+								</tr>
+								<tr>
+									<td>Maure,  Marocain</td>
+									<td>Amuri</td>
+									<td>Imuriyen</td>
+								</tr>
+								<tr>
+									<td>savant</td>
+									<td>amussen</td>
+									<td>imussnen</td>
+								</tr>
+								<tr>
+									<td>endroit,  lieu</td>
+									<td>amcan</td>
+									<td>imucan</td>
+								</tr>
+								<tr>
+									<td>généreux</td>
+									<td>amuccay</td>
+									<td>imuccayen</td>
+								</tr>
+								<tr>
+									<td>patient</td>
+									<td>amraji</td>
+									<td>imrajan</td>
+								</tr>
+								<tr>
+									<td>canon</td>
+									<td>amrud</td>
+									<td>imruden</td>
+								</tr>
+								<tr>
+									<td>chef</td>
+									<td>amɣar</td>
+									<td>imɣaren</td>
+								</tr>
+								<tr>
+									<td>lecteur</td>
+									<td>ameɣri</td>
+									<td>imeɣran</td>
+								</tr>
+								<tr>
+									<td>boucher</td>
+									<td>ameɣras</td>
+									<td>imeɣrasen</td>
+								</tr>
+								<tr>
+									<td>résistance</td>
+									<td>amsekkar</td>
+									<td>imsekkaren</td>
+								</tr>
+								<tr>
+									<td>levain, levure</td>
+									<td>amtun</td>
+									<td>imtunen</td>
+								</tr>
+								<tr>
+									<td>larme</td>
+									<td>amṭṭa</td>
+									<td>imṭṭawen</td>
+								</tr>
+								<tr>
+									<td>vendeur</td>
+									<td>amzenzay</td>
+									<td>imzenzayen</td>
+								</tr>
+								<tr>
+									<td>dernier</td>
+									<td>anggaru</td>
+									<td>inggura</td>
+								</tr>
+								<tr>
+									<td>citoyen</td>
+									<td>anmuri (néo)</td>
+									<td>inmuriyen (néo)</td>
+								</tr>
+								<tr>
+									<td>amnésique</td>
+									<td>anmattu</td>
+									<td>inmutta</td>
+								</tr>
+								<tr>
+									<td>pluie</td>
+									<td>anẓaṛ</td>
+									<td>inẓaṛen</td>
+								</tr>
+								<tr>
+									<td>attente</td>
+									<td>araji</td>
+									<td>irajiṭen</td>
+								</tr>
+								<tr>
+									<td>un messager, un émissaire</td>
+									<td>arqqas</td>
+									<td>irqqasen</td>
+								</tr>
+								<tr>
+									<td>un chameau</td>
+									<td>arɣem</td>
+									<td>irɣemen</td>
+								</tr>
+								<tr>
+									<td>bras</td>
+									<td>aɣir</td>
+									<td>iɣiren</td>
+								</tr>
+								<tr>
+									<td>escargot</td>
+									<td>aɣlal</td>
+									<td>iɣlalen</td>
+								</tr>
+								<tr>
+									<td>bouilloire</td>
+									<td>aɣellay</td>
+									<td>iɣellayen</td>
+								</tr>
+								<tr>
+									<td>mufle</td>
+									<td>aɣenzur</td>
+									<td>iɣenzuren</td>
+								</tr>
+								<tr>
+									<td>os</td>
+									<td>iɣess</td>
+									<td>iɣsan</td>
+								</tr>
+								<tr>
+									<td>âne</td>
+									<td>aɣyul</td>
+									<td>iɣyal</td>
+								</tr>
+								<tr>
+									<td>fleuve</td>
+									<td>iɣzar</td>
+									<td>iɣzran</td>
+								</tr>
+								<tr>
+									<td>rivière</td>
+									<td>asif</td>
+									<td>isaffen</td>
+								</tr>
+								<tr>
+									<td>musée</td>
+									<td>asalay</td>
+									<td>isalayen</td>
+								</tr>
+								<tr>
+									<td>année</td>
+									<td>asggʷas</td>
+									<td>isggʷasen</td>
+								</tr>
+								<tr>
+									<td>perdrix</td>
+									<td>askkur</td>
+									<td>iskʷran</td>
+								</tr>
+								<tr>
+									<td>l'autruche</td>
+									<td>asir</td>
+									<td>isiren</td>
+								</tr>
+								<tr>
+									<td>prénom</td>
+									<td>isem</td>
+									<td>ismawan</td>
+								</tr>
+								<tr>
+									<td>esclave</td>
+									<td>ismɣ</td>
+									<td>ismɣan</td>
+								</tr>
+								<tr>
+									<td>corde</td>
+									<td>asɣun</td>
+									<td>isɣwan</td>
+								</tr>
+								<tr>
+									<td>voleur</td>
+									<td>aceffaṛ</td>
+									<td>iceffaṛen</td>
+								</tr>
+								<tr>
+									<td>étoile</td>
+									<td>itri</td>
+									<td>itran</td>
+								</tr>
+								<tr>
+									<td>parole</td>
+									<td>awal</td>
+									<td>iwalen</td>
+								</tr>
+								<tr>
+									<td>paysan</td>
+									<td>awalwal</td>
+									<td>iwalwalen</td>
+								</tr>
+								<tr>
+									<td>vision</td>
+									<td>awari</td>
+									<td>iwarin</td>
+								</tr>
+								<tr>
+									<td>famille</td>
+									<td>arwacun</td>
+									<td>irwacunen</td>
+								</tr>
+								<tr>
+									<td>gens</td>
+									<td>amdan</td>
+									<td>iwdan</td>
+								</tr>
+								<tr>
+									<td>jaune</td>
+									<td>awraɣ</td>
+									<td>iwraɣin</td>
+								</tr>
+								<tr>
+									<td>ortie</td>
+									<td>tayzimt</td>
+									<td>izem</td>
+								</tr>
+								<tr>
+									<td>frontière</td>
+									<td>aymir</td>
+									<td>iymiren</td>
+								</tr>
+								<tr>
+									<td>dieu</td>
+									<td>ayuc</td>
+									<td>iyucen</td>
+								</tr>
+								<tr>
+									<td>cheval</td>
+									<td>ayis</td>
+									<td>iysan</td>
+								</tr>
+								<tr>
+									<td>beauté</td>
+									<td>aẓli</td>
+									<td>izalyawen</td>
+								</tr>
+								<tr>
+									<td>pilon</td>
+									<td>azduz</td>
+									<td>izduzen</td>
+								</tr>
+								<tr>
+									<td>pelote</td>
+									<td>azḍi</td>
+									<td>izḍiyen</td>
+								</tr>
+								<tr>
+									<td>clitoris</td>
+									<td>azlul</td>
+									<td>izlulen</td>
+								</tr>
+								<tr>
+									<td>chant</td>
+									<td>izri</td>
+									<td>izran</td>
+								</tr>
+								<tr>
+									<td>droit coutumier</td>
+									<td>azref</td>
+									<td>izerfan</td>
+								</tr>
+								<tr>
+									<td>vert</td>
+									<td>aziza</td>
+									<td>izzawen</td>
+								</tr>
+								<tr>
+									<td>cri, mugissement, rugissement, hurlement</td>
+									<td>izzif</td>
+									<td>izzifen</td>
+								</tr>
+								<tr>
+									<td>racine, origine</td>
+									<td>aẓwaṛ</td>
+									<td>iẓwṛan</td>
+								</tr>
+								<tr>
+									<td>couleur, teint (du visage)</td>
+									<td>llun</td>
+									<td>llwan</td>
+								</tr>
+								<tr>
+									<td>juif</td>
+									<td>uday</td>
+									<td>udayen</td>
+								</tr>
+								<tr>
+									<td>corde dont les extrémités sont munis de pierres</td>
+									<td>ukkʷu</td>
+									<td>ukkan</td>
+								</tr>
+								<tr>
+									<td>cœur</td>
+									<td>ul</td>
+									<td>ulawan</td>
+								</tr>
+								<tr>
+									<td>des fois, parfois</td>
+									<td>ca n umur</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>une fois</td>
+									<td>ijj n umur</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>fois</td>
+									<td>umur</td>
+									<td>umuren</td>
+								</tr>
+								<tr>
+									<td>jour</td>
+									<td>ass</td>
+									<td>ussan</td>
+								</tr>
+								<tr>
+									<td>source</td>
+									<td>tala</td>
+									<td>taliwin</td>
+								</tr>
+								<tr>
+									<td>aide</td>
+									<td>tallalt</td>
+									<td>tallalin</td>
+								</tr>
+								<tr>
+									<td>recherche</td>
+									<td>tarezzut</td>
+									<td>tarezzutin</td>
+								</tr>
+								<tr>
+									<td>lecture</td>
+									<td>taɣuri</td>
+									<td>taɣuriwin</td>
+								</tr>
+								<tr>
+									<td>oubli</td>
+									<td>tattut</td>
+									<td>tattutin</td>
+								</tr>
+								<tr>
+									<td>battoir</td>
+									<td>tazduzt</td>
+									<td>tazduzt</td>
+								</tr>
+								<tr>
+									<td>course</td>
+									<td>tazzra</td>
+									<td>tazzriwin</td>
+								</tr>
+								<tr>
+									<td>épis</td>
+									<td>tidrit</td>
+									<td>tidrin</td>
+								</tr>
+								<tr>
+									<td>lumière</td>
+									<td>tufawt</td>
+									<td>tifawin</td>
+								</tr>
+								<tr>
+									<td>volonté</td>
+									<td>tuxsa</td>
+									<td>tixsawin</td>
+								</tr>
+								<tr>
+									<td>brebis</td>
+									<td>tixsi</td>
+									<td>tixswin</td>
+								</tr>
+								<tr>
+									<td>naissance</td>
+									<td>talalit</td>
+									<td>tilaliten</td>
+								</tr>
+								<tr>
+									<td>dictionnaire</td>
+									<td>tamawalt</td>
+									<td>timawalin</td>
+								</tr>
+								<tr>
+									<td>cher, aimé</td>
+									<td>timexsit</td>
+									<td>timexsin</td>
+								</tr>
+								<tr>
+									<td>désir</td>
+									<td>timexsiwt</td>
+									<td>timexsiwin</td>
+								</tr>
+								<tr>
+									<td>propos</td>
+									<td>timenni</td>
+									<td>timenna</td>
+								</tr>
+								<tr>
+									<td>terre, pays, patrie</td>
+									<td>tamurt</td>
+									<td>timura</td>
+								</tr>
+								<tr>
+									<td>savoir</td>
+									<td>tamussni</td>
+									<td>timussniwin</td>
+								</tr>
+								<tr>
+									<td>cadeau</td>
+									<td>timuca</td>
+									<td>timucawin</td>
+								</tr>
+								<tr>
+									<td>patiente</td>
+									<td>tamrajit</td>
+									<td>timrajin</td>
+								</tr>
+								<tr>
+									<td>dialogue</td>
+									<td>tamsawalt</td>
+									<td>timsawalin</td>
+								</tr>
+								<tr>
+									<td>précédemment, auparavant, avant</td>
+									<td>tamezwarut</td>
+									<td>timezwura</td>
+								</tr>
+								<tr>
+									<td>conte</td>
+									<td>tanfust</td>
+									<td>tinfusin</td>
+								</tr>
+								<tr>
+									<td>convocation</td>
+									<td>tanfutc</td>
+									<td>tinfusin</td>
+								</tr>
+								<tr>
+									<td>argent (monnaie)</td>
+									<td>tinɛacin</td>
+									<td>tinɛacin</td>
+								</tr>
+								<tr>
+									<td>révotle, soulèvement</td>
+									<td>tanukkra</td>
+									<td>tinukkriwin</td>
+								</tr>
+								<tr>
+									<td>écriture</td>
+									<td>tira</td>
+									<td>tirawin</td>
+								</tr>
+								<tr>
+									<td>théière</td>
+									<td>taɣellact</td>
+									<td>tiɣellacin</td>
+								</tr>
+								<tr>
+									<td>dent</td>
+									<td>tiɣmast</td>
+									<td>tiɣmas</td>
+								</tr>
+								<tr>
+									<td>cours,  leçon</td>
+									<td>tiɣri</td>
+									<td>tiɣriwin</td>
+								</tr>
+								<tr>
+									<td>squelette</td>
+									<td>taɣessa</td>
+									<td>tiɣssiwin</td>
+								</tr>
+								<tr>
+									<td>foie</td>
+									<td>tasa</td>
+									<td>tisawin</td>
+								</tr>
+								<tr>
+									<td>aiguille</td>
+									<td>tisignft</td>
+									<td>tisgnfin</td>
+								</tr>
+								<tr>
+									<td>droit</td>
+									<td>tasɣart</td>
+									<td>tisseqar</td>
+								</tr>
+								<tr>
+									<td>œil</td>
+									<td>tiṭṭ</td>
+									<td>tiṭṭawin</td>
+								</tr>
+								<tr>
+									<td>découverte</td>
+									<td>tawafit</td>
+									<td>tiwafitin</td>
+								</tr>
+								<tr>
+									<td>mot</td>
+									<td>tawalt</td>
+									<td>tiwalin</td>
+								</tr>
+								<tr>
+									<td>demande</td>
+									<td>tutra</td>
+									<td>tiwatriwin</td>
+								</tr>
+								<tr>
+									<td>forêt</td>
+									<td>tiziy</td>
+									<td>tiziyen</td>
+								</tr>
+								<tr>
+									<td>verdure</td>
+									<td>tazizawt</td>
+									<td>tizizawent</td>
+								</tr>
+								<tr>
+									<td>abeille</td>
+									<td>tazizwit</td>
+									<td>tizizwa</td>
+								</tr>
+								<tr>
+									<td>argent (monnaie)</td>
+									<td>tmenyaṭ</td>
+									<td>tmenyaṭ</td>
+								</tr>
+								<tr>
+									<td>maison</td>
+									<td>taddart</td>
+									<td>tudrin</td>
+								</tr>
+								<tr>
+									<td>vol</td>
+									<td>tukkarḍa</td>
+									<td>tukkarḍiwin</td>
+								</tr>
+								<tr>
+									<td>objet volé</td>
+									<td>tucerḍa</td>
+									<td>tucerḍiwin</td>
+								</tr>
+								<tr>
+									<td>don</td>
+									<td>tucci</td>
+									<td>tucciwin</td>
+								</tr>
+								<tr>
+									<td>langue, idiom</td>
+									<td>tutlayt</td>
+									<td>tutlayint</td>
+								</tr>
+								<tr>
+									<td>pénis</td>
+									<td>abellaw</td>
+									<td>ibellawen</td>
+								</tr>
+					    </table>
+				  </div>
+
+				  <script type="application/javascript">
+					let input, filter, table, tr, td, txtValue;
+					input = document.getElementById("myInput");
+					table = document.getElementById("myTable");
+					tr = table.getElementsByTagName("tr");
+
+					for (let i = 0; i < tr.length; i++) {
+						tr[i].style.display = "none";
+					}
+
+					function tableSearch() {			
+						//Intialising Variables
+						filter = input.value.toUpperCase();	
+						
+						for (let i = 0; i < tr.length; i++) {
+							for (let j = 0; j < 1; j++){
+								td = tr[i].getElementsByTagName("td")[j];
+								if (td) {
+									txtValue = td.textContent || td.innerText;
+									if (txtValue.toUpperCase().indexOf(filter) > -1 && filter != '') {
+										tr[i].style.display = "";
+									} else {
+										tr[i].style.display = "none";
+									}
+								}
+							}
+						}
+					}
+				</script>
+			</header>
+			<!-- Fin du header -->
+			
+			<!-- Informations -->
+			
+			<!-- Fin des informations -->
+		  </section>
+
+		<!-- Pied de page -->
+		
+		<footer class="site-footer">
+			<footer class="bg-dark text-center text-white">
+				<!-- Grid container -->
+				<div class="container p-4 pb-0">
+				  <!-- Section: Social media -->
+				  <section class="mb-4">
+					<!-- Facebook -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+					  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+					</svg>
+					<!-- Twitter -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+					  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+					</svg>
+			  
+					<!-- Google -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+					  <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+					</svg>
+			  
+					<!-- Instagram -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+					  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+					</svg>
+			  
+					<!-- Linkedin -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+					  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+					</svg>
+			
+					<!-- Github -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+					  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+					</svg>
+			
+				  <!-- Section: Social media -->
+				</div>
+				<!-- Grid container -->
+			   
+				<!-- Copyright -->
+				<div class="text-center p-3 footer" style="background-color: rgba(0, 0, 0, 0.2);">
+				  © 2022 Copyright :
+				  <a class="text-white">AMYAZ</a>
+				</div>
+				<!-- Copyright -->
+		  </footer>
+		  <!-- Fin du pied de page -->
+		</footer>
+		</body>
+		</html>

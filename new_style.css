@@ -1,0 +1,11 @@
+body{ 
+    text-align:center;
+}
+
+  header{
+      min-height: calc(100% - 208px);
+}
+
+footer {
+    height: 152px;
+}
